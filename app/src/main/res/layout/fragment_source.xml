@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NewsFragment.Newsstand.SourceFragment">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+        <include layout="@layout/toolbar_layout"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_marginTop="?actionBarSize"
+        android:id="@+id/preloadAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:duration="1500">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/source_animation_layout"/>
+            <include layout="@layout/source_animation_layout"/>
+            <include layout="@layout/source_animation_layout"/>
+            <include layout="@layout/source_animation_layout"/>
+            <include layout="@layout/source_animation_layout"/>
+            <include layout="@layout/source_animation_layout"/>
+            <include layout="@layout/source_animation_layout"/>
+            <include layout="@layout/source_animation_layout"/>
+            <include layout="@layout/source_animation_layout"/>
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/sourceRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

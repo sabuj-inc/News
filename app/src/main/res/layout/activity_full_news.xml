@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FullNews">
+
+    <!--website area-->
+
+
+
+
+    <RelativeLayout
+        android:elevation="5dp"
+        android:id="@+id/webControl"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <ImageView
+            android:background="?selectableItemBackgroundBorderless"
+            android:id="@+id/webBack"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:padding="14dp"
+            android:src="@drawable/back_icon" />
+
+        <ImageView
+            android:id="@+id/webShare"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:padding="15dp"
+            android:src="@drawable/share_icon" />
+    </RelativeLayout>
+    <ProgressBar
+        android:layout_below="@id/webControl"
+        android:background="@color/status"
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:max="100" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/progressBar">
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="3dp" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/web_internet_connection"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="#7A7CFA"
+        android:gravity="center"
+        android:text="No Internet Connection"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+</RelativeLayout>

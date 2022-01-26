@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:background="@drawable/more_news_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/savedNews"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/click"
+        android:paddingLeft="20dp">
+
+        <ImageView
+            android:id="@+id/savedNewsImage"
+            android:padding="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/bookmark_icon" />
+
+        <TextView
+            android:id="@+id/savedNewsText"
+            android:textColor="@color/icon_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="Save for later"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shareNews"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/click"
+        android:paddingLeft="20dp">
+
+        <ImageView
+            android:padding="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/share_icon" />
+
+        <TextView
+            android:textColor="@color/icon_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="Share"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/newsWebsite"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/click"
+        android:paddingLeft="20dp">
+
+        <ImageView
+            android:padding="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/go_to_icon" />
+
+        <TextView
+            android:textColor="@color/icon_text"
+            android:id="@+id/newsWebsiteName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="Go to ..."
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/forYou"
+        android:icon="@drawable/new_icon"
+        android:title="For you" />
+
+    <item
+        android:id="@+id/headlines"
+        android:icon="@drawable/headlines"
+        android:title="Headlines" />
+
+    <item
+        android:id="@+id/following"
+        android:icon="@drawable/following_icon"
+        android:title="Newsstand" />
+
+    <item
+        android:id="@+id/saved"
+        android:icon="@drawable/bookmark_icon"
+        android:title="Saved" />
+</menu>
